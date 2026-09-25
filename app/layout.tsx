@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { MouseEffect } from "@/components/features/MouseEffect";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,7 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} dark h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <MouseEffect />
+        {children}
+      </body>
     </html>
   );
 }
