@@ -104,7 +104,7 @@ export function MouseEffect() {
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none fixed inset-0 z-30 w-full h-full"
+      className="pointer-events-none fixed inset-0 -z-10 w-full h-full"
     />
   );
 }
