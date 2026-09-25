@@ -21,8 +21,11 @@ export default async function Home() {
         <section id="hero" className="min-h-screen flex items-center pt-25 px-[8%] max-w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center w-full max-w-300 mx-auto">
             <div className="hero-left">
-              <div className="font-mono text-[0.8rem] text-[#00D4FF] tracking-[0.15em] uppercase mb-5">
-                <span className="inline-block w-7.5 h-px bg-[#00D4FF] align-middle mr-2.5"></span>
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#00D4FF]/10 border border-[#00D4FF]/20 font-mono text-[0.75rem] text-[#00D4FF] tracking-[0.15em] uppercase mb-6 shadow-[0_0_15px_rgba(0,212,255,0.15)]">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D4FF] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00D4FF]"></span>
+                </span>
                 Available for opportunities
               </div>
               <h1 className="font-heading text-[clamp(2.4rem,5vw,3.8rem)] font-bold leading-[1.1] tracking-tight mb-4">

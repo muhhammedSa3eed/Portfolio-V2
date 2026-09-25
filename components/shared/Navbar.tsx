@@ -4,7 +4,7 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-[5%] py-5 bg-[#0A0F1E]/85 backdrop-blur-md border-b border-[#00D4FF]/15">
       <div className="font-mono text-base text-[#00D4FF] tracking-wider">
-        // your.name
+       MS
       </div>
       <ul className="hidden md:flex gap-9 list-none m-0 p-0">
         <li>
