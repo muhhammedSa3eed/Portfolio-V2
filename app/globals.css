@@ -102,6 +102,7 @@
 
 @theme inline {
   --color-cyan-glow: rgba(0, 212, 255, 0.25);
+  --font-signature: var(--font-signature);
 }
 
 .dark {
