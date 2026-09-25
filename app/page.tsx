@@ -2,6 +2,7 @@ import { Navbar } from "@/components/shared/Navbar";
 import { getProjects } from "@/services/projects";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { Terminal } from "@/components/features/Terminal";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -44,32 +45,7 @@ export default async function Home() {
               </div>
             </div>
 
-            <div className="hero-right hidden md:block">
-              <div className="bg-[#060A14] border border-[#00D4FF]/15 rounded-xl overflow-hidden shadow-[0_0_60px_rgba(0,212,255,0.08)]">
-                <div className="bg-[#0E1528] px-4 py-3 flex items-center gap-2 border-b border-[#00D4FF]/15">
-                  <div className="w-3 h-3 rounded-full bg-[#FF5F57]"></div>
-                  <div className="w-3 h-3 rounded-full bg-[#FEBC2E]"></div>
-                  <div className="w-3 h-3 rounded-full bg-[#28C840]"></div>
-                  <span className="font-mono text-[0.75rem] text-[#8892B0] mx-auto">developer.config.json</span>
-                </div>
-                <div className="p-6 font-mono text-[0.82rem] leading-loose">
-                  <span className="text-[#8892B0]">&#123;</span><br/>
-                  &nbsp;&nbsp;<span className="text-[#00D4FF]">&quot;name&quot;</span><span className="text-[#A8B2D8]">:</span> <span className="text-[#A8FF78]">&quot;Your Name&quot;</span>,<br/>
-                  &nbsp;&nbsp;<span className="text-[#00D4FF]">&quot;role&quot;</span><span className="text-[#A8B2D8]">:</span> <span className="text-[#A8FF78]">&quot;Frontend → Full Stack&quot;</span>,<br/>
-                  &nbsp;&nbsp;<span className="text-[#00D4FF]">&quot;frontend&quot;</span><span className="text-[#A8B2D8]">:</span> <span className="text-[#8892B0]">[</span><br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#A8FF78]">&quot;React&quot;</span>, <span className="text-[#A8FF78]">&quot;Next.js&quot;</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#A8FF78]">&quot;TypeScript&quot;</span>, <span className="text-[#A8FF78]">&quot;CSS&quot;</span><br/>
-                  &nbsp;&nbsp;<span className="text-[#8892B0]">]</span>,<br/>
-                  &nbsp;&nbsp;<span className="text-[#00D4FF]">&quot;backend&quot;</span><span className="text-[#A8B2D8]">:</span> <span className="text-[#8892B0]">[</span><br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#A8FF78]">&quot;Node.js&quot;</span>, <span className="text-[#A8FF78]">&quot;PostgreSQL&quot;</span>,<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#A8FF78]">&quot;REST APIs&quot;</span>, <span className="text-[#A8FF78]">&quot;Docker&quot;</span><br/>
-                  &nbsp;&nbsp;<span className="text-[#8892B0]">]</span>,<br/>
-                  &nbsp;&nbsp;<span className="text-[#00D4FF]">&quot;status&quot;</span><span className="text-[#A8B2D8]">:</span> <span className="text-[#A8FF78]">&quot;learning&quot;</span>,<br/>
-                  &nbsp;&nbsp;<span className="text-[#00D4FF]">&quot;open_to_work&quot;</span><span className="text-[#A8B2D8]">:</span> <span className="text-[#FFB86C]">true</span><span className="inline-block w-2 h-3.5 bg-[#00D4FF] align-middle ml-1 animate-pulse"></span><br/>
-                  <span className="text-[#8892B0]">&#125;</span>
-                </div>
-              </div>
-            </div>
+            <Terminal />
           </div>
         </section>
 
